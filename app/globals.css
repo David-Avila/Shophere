@@ -144,7 +144,7 @@ a{
 
 .productPreview > img{
   border-radius: inherit;
-  width: 95%;
+  width: 100%;
   max-width: 240px;
 }
 
