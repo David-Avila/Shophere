@@ -201,6 +201,7 @@ a{
   align-items: flex-start;
   justify-content: space-evenly;
   flex-flow: column wrap;
+  padding: 15px;
 }
 
 .priceDiv{
