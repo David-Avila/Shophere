@@ -183,7 +183,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   padding-top: 80px;
   gap: 7em;
 }
