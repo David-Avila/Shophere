@@ -1,0 +1,228 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #090513;
+  color: aliceblue;
+}
+
+*{
+  text-decoration: none;
+}
+
+.dashboard{
+  width: 100%;
+}
+
+a{
+  color: inherit;
+}
+
+/*********************************************** Page Title *********************************************/
+
+.pageTitle{
+  font-size: 5em;
+  color: bisque;
+  width: 100%;
+  text-align: center;
+}
+
+.centerThis{
+  width: 100%;
+  text-align: center;
+}
+
+.pageTitleSpan{
+  color: lightblue;
+}
+
+.pageTitle:hover{
+  color: rgb(233, 213, 135);
+}
+
+.pageTitle:hover > .pageTitleSpan{
+  color: turquoise;
+}
+
+/******************************************* Navigation Bar ************************************************/
+
+.navBar{
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navBar > a:hover > .navTitle{
+  color: rgb(233, 213, 135);
+}
+
+.navBar > a:hover > h2 > .blueText{
+  color: turquoise;
+}
+
+.navTitle{
+  margin: 20px;
+  font-size: 2em;
+
+  color: bisque;
+  transition: all 0.5s ease-in-out;
+}
+
+.blueText{
+  color: lightblue;
+  transition: all 0.5s ease-in-out;
+}
+
+.navBar > a{
+  color: inherit;
+}
+
+/******************************************** Drop down ***********************************************/
+.dropdownMenu{
+  position: relative;
+}
+
+.dropdownMenu:hover > .dropdownItems{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.dropdownItems{
+  position: absolute;
+  list-style: none;
+  width: fit-content;
+  left: -55%;
+  top: 20%;
+
+  opacity: 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.item{
+  background-color: #090513;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+}
+
+.item:hover{
+  background-color: #1b1824;
+}
+
+.item:last-child{
+  border-radius: 0 0 10px 10px;
+}
+
+/******************************************* Product Preview ************************************************/
+
+.productContainer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.productPreview{
+  position: relative;
+
+  width: fit-content;
+  height: fit-content;
+  min-width: 240px;
+  min-height: 360px;
+
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  margin: 15px;
+
+  display: grid;
+  place-content: center;
+}
+
+.productPreview > img{
+  border-radius: inherit;
+  width: 95%;
+  max-width: 240px;
+}
+
+.productData{
+  position: absolute;
+  
+  background-color: rgba(27, 24, 36, 0.95);
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-flow: column wrap;
+
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+
+  opacity: 0;
+  bottom: -100%;
+  transition: all 0.4s ease;
+}
+
+.productPreview:hover > .productData{
+  opacity: 1;
+  bottom: 0%;
+}
+
+.productTitle{
+  width: 90%;
+  word-wrap: break-word;
+}
+
+/********************************************* Product Page ***************************************************/
+
+.productPage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  padding-top: 80px;
+  gap: 7em;
+}
+
+.productPage > img{
+  width: 320px;
+  background-color: white;
+  border: 10px solid white;
+  border-radius: 10px;
+}
+
+.productPageContent{
+  width: 480px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-flow: column wrap;
+}
+
+.priceDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  flex-flow: row nowrap;
+}
+
+.buyBtn{
+  padding: 8px 15px;
+  border: 1px solid #1b1824;
+  border-radius: 10px;
+  font-size: 1em;
+  place-self: center;
+
+  transition: all 0.3s ease;
+}
+
+.buyBtn:hover{
+  background-color: inherit;
+  color: inherit;
+  border: 1px solid white;
+}
